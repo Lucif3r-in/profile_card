@@ -1,39 +1,85 @@
-import React from 'react'
-import banner from './images/bg-pattern-card.svg'
-import pic from './images/image-victor.jpg'
+import React from "react";
 
+import "./Profile.css";
 const Profile = () => {
   return (
-    <div className='absolute flex w-screen h-screen'>
-        <div className='w-[326px] h-[374px] bg-white mx-auto my-auto rounded-2xl overflow-hidden'>
-            <div className=''>
-            <img className='top-0 z-10' src={banner} alt=''></img>
-            </div>
-            <div className='relative'>
-            <img className='z-0 mx-auto mt-[-45px] rounded-full border-[5px] border-white' src={pic} alt=''></img>
-            </div>
-            <div className='flex-col'>
-                <h2 className='text-center text-[18px] font-main font-bold mt-[12px]'>Victor Crest <span className='font-light text-[#6B7082] ml-2'>26</span></h2>
-                <h2 className='text-center font-main text-[14px] mt-[12px]'>London</h2>
-                <div className='border mt-[40px]'></div>
-                <div className='flex flex-row'>
-                    <div className='flex-col'>
-                        <p className='text-[#2E3349] text-[18px] font-main font-bold text-center ml-[41px] mt-[12px]'>80K</p>
-                        <p className='text-[10px] text-[#6B7082] font-main ml-[41px]'>Followers</p>
-                    </div>
-                    <div className='flex-col'>
-                        <p className='text-[#2E3349] text-[18px] font-main font-bold text-center ml-[61px] mt-[12px]'>803K</p>
-                        <p className='text-[10px] text-[#6B7082] font-main ml-[70px]'>Likes</p>
-                    </div>
-                    <div className='flex-col'>
-                        <p className='text-[#2E3349] text-[18px] font-main font-bold text-center ml-[55px] mt-[12px]'>1.4K</p>
-                        <p className='text-[10px] text-[#6B7082] font-main ml-[57px]'>Photos</p>
-                    </div>
-                </div>
-            </div>
+    <div className="wrapper flex justify-center items-center w-screen h-screen">
+      <div className="card w-11/12 md:w-[600px] h-[350px] mx-auto top-0 sm:border-spacing-6 rounded-2xl ">
+        <div>
+          <img
+            className="z-0 mx-auto rounded-full shadow-lg border-[0.5px] border-white h-32 mt-6"
+            src="https://res.cloudinary.com/dhnkuonev/image/upload/v1670234767/my%20folder/tp3_n9m1ew.png"
+            alt=""
+          />
         </div>
-    </div>
-  )
-}
+        <div className="TextContainer tracking-widest">Ashutosh Rath</div>
+        <p className="TitleText">
+          Student, Web Developer, Competitive Programmer
+        </p>
 
-export default Profile
+        <div className="LinkContainer px-2 space-x-0.5 md:space-x-8">
+          <div className=" ">
+            <a href="https://github.com/Lucif3r-in">
+              {" "}
+              <img
+                className="rounded-full shadow-md"
+                src="https://res.cloudinary.com/dhnkuonev/image/upload/v1672917397/my%20folder/icons8-github_depwrg.gif"
+                alt=""
+              />
+            </a>
+          </div>
+          <a href="https://www.linkedin.com/in/ashutosh-rath-966176223/">
+            {" "}
+            <img
+              className="rounded-full shadow-lg"
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1672917874/my%20folder/icons8-linkedin-circled_hkalwu.gif"
+              alt=""
+            />
+          </a>
+          <a href="https://www.instagram.com/v_ashu_dev_/">
+            {" "}
+            <img
+              className="rounded-full shadow-lg"
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1672917754/my%20folder/icons8-instagram_qjq8bo.gif"
+              alt=""
+            />
+          </a>
+          <a href="mailto:ashutosh123rath@gmail.com">
+            {" "}
+            <img
+              className="rounded-2xl shadow-lg"
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1672918168/my%20folder/icons8-gmail-logo_cxtrv5.gif"
+              alt=""
+            />
+          </a>
+          <a href="https://twitter.com/Ashutos48101482">
+            {" "}
+            <img
+              className="rounded-full shadow-lg"
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1672918384/my%20folder/icons8-twitter-circled_wqpbny.gif"
+              alt=""
+            />
+          </a>
+          <a href="https://www.buymeacoffee.com/ashutosh02">
+            {" "}
+            <img
+              className="rounded-full shadow-lg"
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1672919111/my%20folder/icons8-cup_h0w798.gif"
+              alt=""
+            />
+          </a>
+          <a href="https://ashuport.netlify.app/">
+            {" "}
+            <img
+              className="rounded-full shadow-lg"
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1672919225/my%20folder/icons8-programming_lmdxnv.gif"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Profile;
